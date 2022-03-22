@@ -8,6 +8,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CrystalSpoon" />
+        android:theme="@style/Theme.CrystalSpoon">
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
+    </application>
 
 </manifest>
