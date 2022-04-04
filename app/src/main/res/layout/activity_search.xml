@@ -21,7 +21,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/backButton"
+                android:id="@+id/sear_btn_back"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="54dp"
@@ -32,22 +32,22 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <EditText
-                android:id="@+id/search_edit_search"
+                android:id="@+id/sear_edit_search"
                 android:layout_width="0dp"
-                android:layout_weight="5"
                 android:layout_height="51dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_weight="5"
                 android:background="@drawable/search_edittext_background"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:paddingLeft="20dp"
                 android:text="무엇을 찾고 계신가요?"
-                android:textColor="#BCA6F9"
-                android:textSize="14dp"
-                android:layout_marginBottom="30dp"/>
+                android:textColor="@color/sujung_lilac"
+                android:textSize="14dp" />
 
             <ImageButton
-                android:id="@+id/searchButton"
+                android:id="@+id/sear_btn_search"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="51dp"
@@ -61,7 +61,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/sear_txt1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
@@ -85,7 +85,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="30dp"
-            android:background="#BCA6F9" />
+            android:background="@color/sujung_lilac" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -93,7 +93,7 @@
             >
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/sear_txt2"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
 
 
             <TextView
-                android:id="@+id/searchHistoryAllDeleteButton"
+                android:id="@+id/sear_txt_delete_all"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity=""

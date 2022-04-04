@@ -10,8 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CrystalSpoon">
         <activity
+
             android:name=".SearchActivity"
             android:exported="false" />
+        <activity
+            android:name=".RestDetailActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
