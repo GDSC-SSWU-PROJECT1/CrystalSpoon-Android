@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommActivity">
+
+    <data>
+
+        <variable
+            name="community"
+            type="kr.co.crystalspoon.CommActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:src="@drawable/btn_back" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scrollbars="none">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/comm_chip_all"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checkable="true"
+                        android:text="전체"
+                        android:textAlignment="center"
+                        app:chipCornerRadius="7dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/comm_chip_kor"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checkable="true"
+                        android:text="한식"
+                        android:textAlignment="center"
+                        app:chipCornerRadius="7dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/comm_chip_jap"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checkable="true"
+                        android:text="일식"
+                        android:textAlignment="center"
+                        app:chipCornerRadius="7dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/comm_chip_wes"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checkable="true"
+                        android:text="양식"
+                        android:textAlignment="center"
+                        app:chipCornerRadius="7dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/comm_chip_chi"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checkable="true"
+                        android:text="중식"
+                        android:textAlignment="center"
+                        app:chipCornerRadius="7dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/comm_chip_asi"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checkable="true"
+                        android:text="아시안"
+                        android:textAlignment="center"
+                        app:chipCornerRadius="7dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/comm_chip_des"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checkable="true"
+                        android:text="디저트"
+                        android:textAlignment="center"
+                        app:chipCornerRadius="7dp" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+
+            </HorizontalScrollView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="340dp"
+                    android:layout_marginLeft="340dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:listitem="@layout/list_item_comm">
+
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
