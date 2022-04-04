@@ -1,6 +1,7 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+<<<<<<< HEAD
 # Created by https://www.toptal.com/developers/gitignore/api/kotlin,androidstudio,android
 # Edit at https://www.toptal.com/developers/gitignore?templates=kotlin,androidstudio,android
 
@@ -185,3 +186,5 @@ fabric.properties
 !/gradle/wrapper/gradle-wrapper.jar
 
 # End of https://www.toptal.com/developers/gitignore/api/kotlin,androidstudio,android
+=======
+>>>>>>> b886b2a7ee3d6b6e08ea8c99e9236b04bde2112b
