@@ -12,6 +12,9 @@
         <activity
             android:name=".CommActivity"
             android:exported="false" />
+        <activity
+            android:name=".RestDetailActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
