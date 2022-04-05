@@ -9,12 +9,7 @@ android {
     }
 
     compileSdk 31
-
-    buildFeatures {
-        //noinspection DataBindingWithoutKapt
-        dataBinding true
-    }
-
+    
     defaultConfig {
         applicationId "kr.co.crystalspoon"
         minSdk 16
