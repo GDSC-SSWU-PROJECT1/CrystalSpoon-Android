@@ -11,10 +11,10 @@
         android:theme="@style/Theme.CrystalSpoon">
         <activity
             android:name=".SearchActivity"
-            android:exported="false"/>
+            android:exported="true"/>
         <activity
             android:name=".CommActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".RestDetailActivity"
             android:exported="true" />
