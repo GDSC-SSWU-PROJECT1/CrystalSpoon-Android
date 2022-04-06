@@ -18,6 +18,10 @@
         <activity
             android:name=".RestDetailActivity"
             android:exported="true" />
+        <activity
+            android:name=".NewRestActivity"
+            android:exported="true" />
+
     </application>
 
 </manifest>
