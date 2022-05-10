@@ -27,9 +27,14 @@
         <activity
             android:name=".RestDetailActivity"
             android:exported="true" />
-<!--        <activity-->
-<!--            android:name=".NewRestActivity"-->
-<!--            android:exported="true" />-->
+        <activity
+            android:name=".ReviewActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
 
     </application>
 
