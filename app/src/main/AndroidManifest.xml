@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CrystalSpoon">
         <activity
+            android:name=".NewRestActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".SearchActivity"
             android:exported="true"/>
         <activity
@@ -18,9 +27,9 @@
         <activity
             android:name=".RestDetailActivity"
             android:exported="true" />
-        <activity
-            android:name=".NewRestActivity"
-            android:exported="true" />
+<!--        <activity-->
+<!--            android:name=".NewRestActivity"-->
+<!--            android:exported="true" />-->
 
     </application>
 
