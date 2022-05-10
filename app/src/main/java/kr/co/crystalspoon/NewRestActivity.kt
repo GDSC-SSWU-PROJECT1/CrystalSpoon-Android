@@ -2,16 +2,16 @@ package kr.co.crystalspoon
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import kr.co.crystalspoon.*
+import kr.co.crystalspoon.databinding.ActivityNewRestBinding
 
 class NewRestActivity: AppCompatActivity() {
-    private var mBinding: ActivityMainBinding?=null
+    private var mBinding: ActivityNewRestBinding?=null
     private val binding get()=mBinding!!
     //private LinearLayoutManager newFood,unVisited
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_newrest)
-        mBinding= ActivityMainBinding.inflate(layoutInflater)
+        setContentView(R.layout.activity_new_rest)
+        mBinding= ActivityNewRestBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         //새로운 맛집리스트 추가
@@ -30,16 +30,16 @@ class NewRestActivity: AppCompatActivity() {
         )
 
         //가로스크롤
-        binding.newr_rcy_newr.layoutManager=
+        binding.newrRcyNewr.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false)
-        binding.newr_rcy_unvisited.layoutManager=
+        binding.newrRcyUnvisited.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false)
-        binding.newr_rcy_newr.setHasFixedSize(true)
-        binding.newr_rcy_unvisited.setHasFixedSize(true)
+        binding.newrRcyNewr.setHasFixedSize(true)
+        binding.newrRcyUnvisited.setHasFixedSize(true)
 
         //어댑터 recyclerView 아이디값 다르게 해야함
-        binding.newr_rcy_newr.adapter= NewFoodAdapter(newFoodList)
-        binding.newr_rcy_unvisited.adapter= UnVisitedAdapter(unVisitedList)
+        binding.newrRcyNewr.adapter = NewFoodAdapter(newFoodList)
+        binding.newrRcyUnvisited.adapter = UnVisitedAdapter(unVisitedList)
     }
 }
 
