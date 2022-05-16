@@ -72,12 +72,12 @@
             android:text="지금 다들 찾아보는 메뉴" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recy_poplar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:spanCount="2"
-            tools:listitem="@layout/search_popularity_menu_items"
-            />
+            tools:listitem="@layout/listitem_search_popularity" />
 
         <View
             android:layout_width="match_parent"
@@ -114,10 +114,11 @@
         </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recy_history"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:ignore="SpeakableTextPresentCheck"
-            tools:listitem="@layout/search_my_research_items"/>
+            tools:listitem="@layout/listitem_search_history" />
 
     </LinearLayout>
 
