@@ -64,12 +64,12 @@
         android:text="식당 이름"
         android:textColor="#000000"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/setting_text_version_info"
+        app:layout_constraintBottom_toTopOf="@+id/setting_text_friend_list"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/review_btn_complete" />
 
     <TextView
-        android:id="@+id/setting_text_version_info"
+        android:id="@+id/setting_text_friend_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -87,8 +87,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:paddingTop="20dp"
-        app:layout_constraintStart_toStartOf="@id/setting_text_version_info"
-        app:layout_constraintTop_toBottomOf="@id/setting_text_version_info">
+        app:layout_constraintStart_toStartOf="@id/setting_text_friend_list"
+        app:layout_constraintTop_toBottomOf="@id/setting_text_friend_list">
 
         <ImageView
             android:id="@+id/review_img_spoon1"

@@ -55,12 +55,12 @@
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/setting_text_version_info"
+        app:layout_constraintBottom_toTopOf="@+id/setting_text_friend_list"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/setting_toolbar" />
 
     <TextView
-        android:id="@+id/setting_text_version_info"
+        android:id="@+id/setting_text_friend_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -79,11 +79,11 @@
         android:text="v 1.0.0"
         android:textColor="#ACACAC"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/setting_text_version_info"
-        app:layout_constraintTop_toBottomOf="@+id/setting_text_version_info" />
+        app:layout_constraintStart_toStartOf="@+id/setting_text_friend_list"
+        app:layout_constraintTop_toBottomOf="@+id/setting_text_friend_list" />
 
     <TextView
-        android:id="@+id/setting_text_announcement"
+        android:id="@+id/setting_text_wishlist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -94,37 +94,37 @@
         app:layout_constraintTop_toBottomOf="@+id/setting_text_version" />
 
     <TextView
-        android:id="@+id/setting_text_inquiry"
+        android:id="@+id/setting_text_my_review"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="문의 하기"
         android:textColor="#000000"
         android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="@+id/setting_text_announcement"
-        app:layout_constraintTop_toBottomOf="@+id/setting_text_announcement" />
+        app:layout_constraintStart_toStartOf="@+id/setting_text_wishlist"
+        app:layout_constraintTop_toBottomOf="@+id/setting_text_wishlist" />
 
     <TextView
-        android:id="@+id/setting_text_terms"
+        android:id="@+id/setting_text_settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="약관 및 정책"
         android:textColor="#000000"
         android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="@+id/setting_text_inquiry"
-        app:layout_constraintTop_toBottomOf="@+id/setting_text_inquiry" />
+        app:layout_constraintStart_toStartOf="@+id/setting_text_my_review"
+        app:layout_constraintTop_toBottomOf="@+id/setting_text_my_review" />
 
     <TextView
-        android:id="@+id/setting_text_opensource"
+        android:id="@+id/setting_text_notice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="오픈소스 라이선스"
         android:textColor="#000000"
         android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="@+id/setting_text_terms"
-        app:layout_constraintTop_toBottomOf="@+id/setting_text_terms" />
+        app:layout_constraintStart_toStartOf="@+id/setting_text_settings"
+        app:layout_constraintTop_toBottomOf="@+id/setting_text_settings" />
 
     <View
         android:id="@+id/setting_divider1"
@@ -133,7 +133,7 @@
         android:layout_marginHorizontal="35dp"
         android:layout_marginTop="25dp"
         android:background="?android:attr/listDivider"
-        app:layout_constraintTop_toBottomOf="@+id/setting_text_opensource" />
+        app:layout_constraintTop_toBottomOf="@+id/setting_text_notice" />
 
     <TextView
         android:id="@+id/setting_text_setting_alarm"
