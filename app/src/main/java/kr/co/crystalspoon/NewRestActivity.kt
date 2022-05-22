@@ -7,7 +7,6 @@ import kr.co.crystalspoon.databinding.ActivityNewRestBinding
 class NewRestActivity: AppCompatActivity() {
     private var mBinding: ActivityNewRestBinding?=null
     private val binding get()=mBinding!!
-    //private LinearLayoutManager newFood,unVisited
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new_rest)
@@ -23,7 +22,6 @@ class NewRestActivity: AppCompatActivity() {
         )
         //아직 방문하지 않은 맛집리스트 추가
         val unVisitedList= arrayListOf(
-            UnVisited(R.drawable.img_losdias,"로스디아스","카페","2km"),
             UnVisited(R.drawable.img_losdias,"로스디아스","카페","2km"),
             UnVisited(R.drawable.img_losdias,"로스디아스","카페","2km"),
             UnVisited(R.drawable.img_losdias,"로스디아스","카페","2km"),

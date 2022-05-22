@@ -18,14 +18,15 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/newr_card_view"
-        android:layout_width="254dp"
-        android:layout_height="379dp"
+        android:layout_width="253dp"
+        android:layout_height="366dp"
         android:layout_marginTop="28dp"
         app:cardCornerRadius="20dp"
         app:cardElevation="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/newr_img_only">
+        app:layout_constraintTop_toTopOf="@+id/newr_img_only"
+        android:background="@drawable/newrest_img_round">
 
         <TextView
             android:id="@+id/newr_txt_unvisitedName"
@@ -34,6 +35,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:text="로스디아스"
+            android:textStyle="bold"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <TextView
@@ -42,7 +44,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="50dp"
-            android:text="카페" />
+            android:text="카페"
+            android:textColor="@color/black"/>
 
         <TextView
             android:id="@+id/newr_txt_location"
@@ -51,7 +54,8 @@
             android:layout_gravity="right"
             android:layout_marginTop="50dp"
             android:layout_marginRight="60dp"
-            android:text="성북구" />
+            android:text="성북구"
+            android:textColor="@color/black"/>
 
         <TextView
             android:id="@+id/newr_txt_distance"
@@ -60,15 +64,39 @@
             android:layout_gravity="right"
             android:layout_marginTop="50dp"
             android:layout_marginRight="20dp"
-            android:text="2km" />
+            android:text="2km"
+            android:textColor="@color/black"/>
 
-        <ImageView
-            android:id="@+id/newr_img_unvisitedImage"
-            android:layout_width="197dp"
-            android:layout_height="256dp"
-            android:layout_gravity="center"
+        <androidx.cardview.widget.CardView
+            android:layout_width="207dp"
+            android:layout_height="254dp"
+            app:cardCornerRadius="20dp"
             android:layout_marginTop="30dp"
-            app:srcCompat="@drawable/img_losdias" />
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/newr_img_unvisitedImage"
+                android:layout_width="207dp"
+                android:layout_height="254dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_losdias" />
+        </androidx.cardview.widget.CardView>
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_marginTop="50dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="289dp"-->
+<!--            app:cardCornerRadius="20dp">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/newr_img_unvisitedImage"-->
+<!--                android:layout_width="207dp"-->
+<!--                android:layout_height="254dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                app:srcCompat="@drawable/img_losdias" />-->
+<!--        </androidx.cardview.widget.CardView>-->
+
 
     </androidx.cardview.widget.CardView>
 

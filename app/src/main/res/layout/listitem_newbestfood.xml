@@ -16,8 +16,8 @@
         <!-- 이미지 둥글게-->
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/newr_img_newfood"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="74dp"
+            android:layout_height="74dp"
             android:layout_margin="10dp"
             android:layout_weight="1"
             app:civ_border_color="@color/coral"
@@ -26,11 +26,14 @@
 
         <TextView
             android:id="@+id/newr_txt_newfoodName"
-            android:layout_width="wrap_content"
+            android:layout_width="74dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
-            android:text="수아당" />
+            android:text="수아당"
+            android:textColor="#666666"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
