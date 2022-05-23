@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/setting_btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="31dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/todo"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/review_toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/setting_toolbar"
+        app:srcCompat="@drawable/btn_arrow_left"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/setting_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="환경 설정"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/setting_toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/setting_toolbar"
+        app:layout_constraintStart_toStartOf="@+id/setting_toolbar"
+        app:layout_constraintTop_toTopOf="@+id/setting_toolbar" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/setting_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginTop="28dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/setting_text_use_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10sp"
+        android:text="이용 안내"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/setting_text_friend_list"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting_toolbar" />
+
+    <TextView
+        android:id="@+id/setting_text_friend_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="버전 정보"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/setting_text_use_guide"
+        app:layout_constraintTop_toBottomOf="@+id/setting_text_use_guide" />
+
+    <TextView
+        android:id="@+id/setting_text_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="v 1.0.0"
+        android:textColor="#ACACAC"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/setting_text_friend_list"
+        app:layout_constraintTop_toBottomOf="@+id/setting_text_friend_list" />
+
+    <TextView
+        android:id="@+id/setting_text_wishlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="공지 사항"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/setting_text_version"
+        app:layout_constraintTop_toBottomOf="@+id/setting_text_version" />
+
+    <TextView
+        android:id="@+id/setting_text_my_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="문의 하기"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/setting_text_wishlist"
+        app:layout_constraintTop_toBottomOf="@+id/setting_text_wishlist" />
+
+    <TextView
+        android:id="@+id/setting_text_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="약관 및 정책"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/setting_text_my_review"
+        app:layout_constraintTop_toBottomOf="@+id/setting_text_my_review" />
+
+    <TextView
+        android:id="@+id/setting_text_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="오픈소스 라이선스"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/setting_text_settings"
+        app:layout_constraintTop_toBottomOf="@+id/setting_text_settings" />
+
+    <View
+        android:id="@+id/setting_divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="25dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/setting_text_notice" />
+
+    <TextView
+        android:id="@+id/setting_text_setting_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20sp"
+        android:text="알림 설정"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting_divider1" />
+
+    <TextView
+        android:id="@+id/setting_text_normal_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="일반 알림"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/setting_text_setting_alarm"
+        app:layout_constraintTop_toBottomOf="@+id/setting_text_setting_alarm" />
+
+    <TextView
+        android:id="@+id/setting_text_normal_alarm_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="공지사항, 예약 알림 등을 받습니다."
+        android:textColor="#ACACAC"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/setting_text_normal_alarm"
+        app:layout_constraintTop_toBottomOf="@+id/setting_text_normal_alarm" />
+
+    <Switch
+        android:id="@+id/setting_switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/setting_text_setting_alarm" />
+
+    <TextView
+        android:id="@+id/setting_text_community_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="커뮤니티 알림"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/setting_text_normal_alarm_info"
+        app:layout_constraintTop_toBottomOf="@+id/setting_text_normal_alarm_info" />
+
+    <TextView
+        android:id="@+id/setting_text_community_alarm_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="내가 남긴 후기의 추천 알림을 받습니다."
+        android:textColor="#ACACAC"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/setting_text_community_alarm"
+        app:layout_constraintTop_toBottomOf="@+id/setting_text_community_alarm" />
+
+    <Switch
+        android:id="@+id/setting_switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/setting_text_normal_alarm_info" />
+
+    <View
+        android:id="@+id/setting_divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="25dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/setting_text_community_alarm_info" />
+
+    <TextView
+        android:id="@+id/setting_text_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="로그아웃"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/setting_text_community_alarm_info"
+        app:layout_constraintTop_toBottomOf="@+id/setting_divider2" />
+
+    <TextView
+        android:id="@+id/setting_text_sing_withdrawal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="회원탈퇴"
+        android:textColor="#FF9999"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/setting_text_logout"
+        app:layout_constraintTop_toBottomOf="@+id/setting_text_logout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
