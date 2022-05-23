@@ -4,11 +4,15 @@ plugins {
 }
 
 android {
+
+//    viewBinding {
+//        enabled = true
+//    }
+    compileSdk 31
+
     buildFeatures {
         viewBinding true
     }
-
-    compileSdk 31
 
     defaultConfig {
         applicationId "kr.co.crystalspoon"
