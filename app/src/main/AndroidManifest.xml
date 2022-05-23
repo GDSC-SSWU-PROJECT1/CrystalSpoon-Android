@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CrystalSpoon">
         <activity
+            android:name=".MyReviewActivity"
+            android:exported="false" />
+        <activity
             android:name=".SearchActivity"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".CommActivity"
             android:exported="true" />
@@ -25,11 +28,11 @@
             android:name=".ReviewActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
