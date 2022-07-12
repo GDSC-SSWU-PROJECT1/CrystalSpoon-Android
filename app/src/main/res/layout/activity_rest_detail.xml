@@ -207,9 +207,8 @@
 
                 <LinearLayout
                     android:id="@+id/rest_linear_rating"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:orientation="horizontal">
 
                     <TextView
@@ -275,6 +274,8 @@
                     android:id="@+id/rest_img_line"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginLeft="18dp"
                     app:srcCompat="@drawable/img_line" />
 
                 <LinearLayout
@@ -304,6 +305,15 @@
                         android:textColor="@color/sujung_purple"
                         android:textStyle="bold" />
                 </LinearLayout>
+
+                <androidx.constraintlayout.utils.widget.ImageFilterButton
+                    android:id="@+id/icon_bookclip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="#00000000"
+                    android:src="@drawable/ic_bookclip_blank"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
             </LinearLayout>
 
             <LinearLayout
