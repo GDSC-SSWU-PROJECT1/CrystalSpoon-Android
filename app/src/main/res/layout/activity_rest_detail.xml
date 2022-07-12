@@ -5,43 +5,44 @@
     android:id="@+id/rest_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFF7F7FA"
     tools:context=".RestDetailActivity">
-
-    <ImageButton
-        android:id="@+id/rest_btn_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="31dp"
-        android:layout_marginLeft="31dp"
-        android:background="#00FFFFFF"
-        android:minWidth="48dp"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="@+id/rest_toolbar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/btn_arrow_left"
-        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-
-    <TextView
-        android:id="@+id/rest_text_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="식당 상세"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/rest_toolbar"
-        app:layout_constraintEnd_toEndOf="@+id/rest_toolbar"
-        app:layout_constraintStart_toStartOf="@+id/rest_toolbar"
-        app:layout_constraintTop_toTopOf="@+id/rest_toolbar" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/rest_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/rest_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:background="#00FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/rest_toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/btn_arrow_left"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/rest_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="식당 상세"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/rest_toolbar"
+            app:layout_constraintEnd_toEndOf="@+id/rest_toolbar"
+            app:layout_constraintStart_toStartOf="@+id/rest_toolbar"
+            app:layout_constraintTop_toTopOf="@+id/rest_toolbar" />
+
+    </androidx.appcompat.widget.Toolbar>
 
     <ScrollView
         android:id="@+id/rest_scroll"
@@ -60,35 +61,23 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/rest_layout_restImg"
-                android:layout_width="336dp"
-                android:layout_height="230dp"
+                android:layout_width="match_parent"
+                android:layout_height="232dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginStart="30dp"
-                android:layout_marginLeft="30dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="30dp"
-                android:layout_marginRight="30dp">
-
-                <ImageView
-                    android:id="@+id/rest_img_rest"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/img_dummy" />
+                android:background="@drawable/restd_style_round_img">
 
                 <ImageButton
                     android:id="@+id/rest_btn_imgLeft"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="40dp"
                     android:layout_marginLeft="40dp"
                     android:background="#00FFFFFF"
                     android:minHeight="48dp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="@id/rest_img_rest"
+                    app:layout_constraintStart_toStartOf="@id/rest_layout_restImg"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/btn_whitearrow_left"
                     app:tint="@color/white"
@@ -98,14 +87,27 @@
                     android:id="@+id/rest_btn_imgRight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="40dp"
                     android:layout_marginRight="40dp"
                     android:background="#00FFFFFF"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@id/rest_img_rest"
+                    app:layout_constraintEnd_toEndOf="@id/rest_layout_restImg"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/btn_whitearrow_right"
                     tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/rest_text_imgPage"
+                    android:layout_width="40dp"
+                    android:layout_height="16dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/restd_style_img_page"
+                    android:gravity="center"
+                    android:text="1/2"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -114,10 +116,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
-                android:layout_marginLeft="30dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="30dp"
-                android:layout_marginRight="30dp"
                 android:gravity="left"
                 android:orientation="horizontal">
 
@@ -138,17 +138,6 @@
                     android:layout_marginLeft="10dp"
                     android:text="중식"
                     android:textColor="#80000000" />
-
-                <ImageButton
-                    android:id="@+id/rest_btn_bookclip"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginLeft="15dp"
-                    android:background="#00FFFFFF"
-                    app:srcCompat="@drawable/ic_bookclip_blank"
-                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
             </LinearLayout>
 
             <LinearLayout
@@ -156,23 +145,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
-                android:layout_marginLeft="30dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="30dp"
-                android:layout_marginRight="30dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/rest_text_packing"
                     android:layout_width="44dp"
                     android:layout_height="20dp"
-                    android:background="@color/sujung_purple"
+                    android:background="@drawable/restd_style_round_badges"
                     android:gravity="center"
                     android:paddingTop="3dp"
                     android:paddingBottom="3dp"
                     android:text="포장"
                     android:textColor="@color/white"
-                    android:textSize="12sp"
+                    android:textSize="11sp"
                     android:textStyle="bold"
                     tools:ignore="TextContrastCheck" />
 
@@ -181,14 +168,13 @@
                     android:layout_width="44dp"
                     android:layout_height="20dp"
                     android:layout_marginStart="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:background="@color/sujung_purple"
+                    android:background="@drawable/restd_style_round_badges"
                     android:gravity="center"
                     android:paddingTop="3dp"
                     android:paddingBottom="3dp"
                     android:text="예약"
                     android:textColor="@color/white"
-                    android:textSize="12sp"
+                    android:textSize="11sp"
                     android:textStyle="bold"
                     tools:ignore="TextContrastCheck" />
 
@@ -197,14 +183,13 @@
                     android:layout_width="44dp"
                     android:layout_height="20dp"
                     android:layout_marginStart="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:background="@color/sujung_purple"
+                    android:background="@drawable/restd_style_round_badges"
                     android:gravity="center"
                     android:paddingTop="3dp"
                     android:paddingBottom="3dp"
                     android:text="단체석"
                     android:textColor="@color/white"
-                    android:textSize="12sp"
+                    android:textSize="11sp"
                     android:textStyle="bold"
                     tools:ignore="TextContrastCheck" />
             </LinearLayout>
@@ -233,7 +218,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginStart="5dp"
-                        android:layout_marginLeft="5dp"
                         android:text="별점"
                         android:textColor="#000000" />
 
@@ -243,7 +227,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginStart="8dp"
-                        android:layout_marginLeft="8dp"
                         android:text="4.9" />
 
                     <ImageView
@@ -252,7 +235,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginStart="10dp"
-                        android:layout_marginLeft="10dp"
                         app:srcCompat="@drawable/ic_spoon_fill" />
 
                     <ImageView
@@ -261,7 +243,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginStart="-8dp"
-                        android:layout_marginLeft="-8dp"
                         app:srcCompat="@drawable/ic_spoon_fill" />
 
                     <ImageView
@@ -270,7 +251,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginStart="-8dp"
-                        android:layout_marginLeft="-8dp"
                         app:srcCompat="@drawable/ic_spoon_fill" />
 
                     <ImageView
@@ -279,7 +259,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginStart="-8dp"
-                        android:layout_marginLeft="-8dp"
                         app:srcCompat="@drawable/ic_spoon_fill" />
 
                     <ImageView
@@ -311,7 +290,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginStart="20dp"
-                        android:layout_marginLeft="20dp"
                         android:text="리뷰"
                         android:textColor="#000000" />
 
@@ -333,25 +311,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
-                android:layout_marginLeft="30dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="30dp"
-                android:layout_marginRight="30dp"
+                android:background="@drawable/restd_style_tri_btn_back"
                 android:orientation="horizontal">
 
-                <Button
+                <TextView
                     android:id="@+id/rest_btn_call"
+                    android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="73dp"
                     android:layout_weight="1"
+                    android:background="@drawable/restd_style_tri_btn"
                     android:text="전화"
                     android:textColor="@color/sujung_purple"
                     android:textSize="18sp"
-                    android:textStyle="bold"
-                    app:backgroundTint="@color/white" />
+                    android:textStyle="bold" />
 
-                <Button
+                <TextView
                     android:id="@+id/rest_btn_driection"
+                    android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="73dp"
                     android:layout_weight="1"
@@ -359,10 +338,11 @@
                     android:textColor="@color/sujung_purple"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    app:backgroundTint="@color/white" />
+                    android:background="@drawable/restd_style_tri_btn" />
 
-                <Button
+                <TextView
                     android:id="@+id/rest_btn_share"
+                    android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="73dp"
                     android:layout_weight="1"
@@ -377,13 +357,14 @@
                 android:id="@+id/rest_linear_toggle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/restd_style_toggle_bottom_stroke"
                 android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/rest_text_infoBtn"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="52dp"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="정보"
@@ -393,23 +374,29 @@
                 <TextView
                     android:id="@+id/rest_text_menuBtn"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="52dp"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="메뉴"
-                    android:textColor="#88BCA6F9"
+                    android:textColor="@color/purple_110"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/rest_text_reviewBtn"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="52dp"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="리뷰"
-                    android:textColor="#88BCA6F9"
+                    android:textColor="@color/purple_110"
                     android:textStyle="bold" />
             </LinearLayout>
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/rest_frame"
+                android:name="kr.co.crystalspoon.fragment.RestDetailInfoFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
     </ScrollView>
