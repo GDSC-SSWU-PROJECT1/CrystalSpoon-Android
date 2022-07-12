@@ -11,7 +11,7 @@
         android:theme="@style/Theme.CrystalSpoon">
         <activity
             android:name=".WishActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MyReviewActivity"
             android:exported="false" />
