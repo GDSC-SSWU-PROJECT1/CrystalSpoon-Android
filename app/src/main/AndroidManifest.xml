@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CrystalSpoon">
         <activity
+            android:name=".MenuActivity"
+            android:exported="true" />
+        <activity
             android:name=".WishActivity"
             android:exported="true" />
         <activity
