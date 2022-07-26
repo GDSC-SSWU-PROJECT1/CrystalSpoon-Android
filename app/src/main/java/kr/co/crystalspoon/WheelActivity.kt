@@ -11,10 +11,10 @@ class WheelActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.ac)
+        setContentView(R.layout.activity_wheel)
 
-//        binding.wheelBtnBack.setOnClickListener {
-//            finish()
-//        }
+        binding.wheelBtnBack.setOnClickListener {
+            finish()
+        }
     }
 }
