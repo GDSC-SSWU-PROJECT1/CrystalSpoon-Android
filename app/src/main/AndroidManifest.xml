@@ -46,6 +46,9 @@
             android:name=".MyInfoActivity"
             android:exported="true" />
         <activity
+            android:name=".WheelActivity"
+            android:exported="true" />
+        <activity
             android:name=".FriendActivity"
             android:exported="true" />
     </application>
