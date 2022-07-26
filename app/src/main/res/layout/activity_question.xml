@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionActivity"
+    android:background="#F7F7FA">
+    <ImageButton
+        android:id="@+id/question_btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:background="#F7F7FA"
+        app:layout_constraintBottom_toBottomOf="@+id/question_toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_arrow_left"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/question_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="문의하기"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/question_toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/question_toolbar"
+        app:layout_constraintStart_toStartOf="@+id/question_toolbar"
+        app:layout_constraintTop_toTopOf="@+id/question_toolbar" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/question_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/question_text_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/question_title_background"
+                android:ems="10"
+                android:hint="재목을 입력하세요."
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textSize="12dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:hint="내용을 입력하세요."
+                android:gravity="top"
+                android:textSize="12dp"
+                android:paddingTop="16dp"
+                android:paddingHorizontal="12dp"
+                android:maxLength="2000"
+                android:layout_marginTop="18dp"
+                android:scrollbars = "vertical"
+                android:background="@drawable/question_contents_background"
+                />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="224dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#BCA6F9"
+                android:layout_marginTop="46dp"
+                android:text="보내기" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
