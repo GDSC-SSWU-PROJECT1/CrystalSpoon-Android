@@ -34,7 +34,7 @@
             android:name=".SettingActivity"
             android:exported="true" />
         <activity
-            android:name=".ReviewActivity"
+            android:name=".CalcActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -48,6 +48,10 @@
         <activity
             android:name=".FriendActivity"
             android:exported="true" />
+
+<!--        <activity-->
+<!--            android:name=".CalcActivity"-->
+<!--            android:exported="true" />-->
     </application>
 
 </manifest>
